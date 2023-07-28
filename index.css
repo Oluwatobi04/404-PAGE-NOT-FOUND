@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Montserrat:wght@100;700&family=Space+Mono:wght@400;700&display=swap');
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2.5rem 4.81rem 1.5rem;
+}
+
+/* header section */
+header {
+    margin-bottom: 12.5rem;
+}
+
+.header h4 {
+    color: #333;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+}
+
+/* main section */
+.main {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 308px;
+}
+
+.image {
+    max-width: 539.224px;
+    height: 447.436px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.main .text #bad-news {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333;
+    line-height: normal;
+    letter-spacing: -2.24px;
+    font-family: 'Space Mono', monospace;
+    max-width: 586px;
+    margin-bottom: 36px;
+    padding: 1px 0px;
+}
+
+.main .text #temporary {
+    font-size: 24px;
+    font-weight: 400;
+    color: #4f4f4f;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    font-family: 'Space Mono', monospace;
+    max-width: 381px;
+    margin-bottom: 64px;
+}
+
+.main .text #btn {
+    padding: 24px 43px 23px;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    background-color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.49px;
+    cursor: pointer;
+    /* width: 216px; */
+}
+
+/* footer section */
+.footer {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p, .footer p a {
+    color: #bdbdbd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: normal;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 580px) {
+    .main {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .header {
+        margin-bottom: 4rem;
+    }
+
+    .main .text #bad-news {
+        margin-top: -80px;
+        font-size: 48px;
+        letter-spacing: -1.68px;
+        padding-top: 80px;
+    }
+    .main .text #temporary {
+        font-size: 18px;
+        letter-spacing: -0.63px;
+    }
+   
+}
+
+@media screen and (max-width: 375px) {
+    .image {
+        max-width: 286.83px;
+        height: 238px;
+    }
+    .footer p, .footer p a {
+        font-size: 11px;
+        font-weight: 600;
+
+    }
+}
+
